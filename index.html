@@ -5,24 +5,429 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
   <title>Document</title>
 </head>
 
-<body class="container">
-  <h1>登陆</h1>
-  <form action="#" class="container">
-  <div class="form-group">
-    <label for="">用户名</label>
-    <input type="text" class="form-control"></div>
-  <div class="form-group">
-    <label for="">密码</label>
-    <input type="password" class="form-control">
+<style>
+  /* 改写并覆盖原类 */
+.btn-primary{
+
+}
+.btn-primary:hover{
+}
+
+.container-small{
+}
+.gap{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+</style>
+
+<body>
+  <div class="navbar navbar-default">
+    <!--导航外层(背景) -->
+    <div class="container">
+      <!-- 导航栏全部内容与正文等宽 -->
+
+      <div class="navbar-header">
+        <!-- 导航头部 -->
+        <a href="#" class="navbar-brand">NZ Buy</a> <!-- LOGO -->
+      </div>
+
+      <ul class="nav navbar-nav">
+        <!-- 导航主标签 默认左浮动-->
+        <li><a href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">练习我们</a></li>
+      </ul>
+
+      <form action="#" class="navbar-form navbar-left">
+        <!--导航内表单(搜索)设定左浮动-->
+        <div class="form-group">
+          <!--  表单组  -->
+          <input type="text" class="form-control"> <!--  表单控件  -->
+          <button type="submit" class="btn btn-default">搜下</button>
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <!--导航主标签 设定右浮动-->
+        <li><a href="#">登陆</a></li>
+        <li><a href="#">注册</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="form-group">
-  <input type="submit" class="btn btn-primary" >
-  </div>
+  <!--导航外层(背景) -->
+  <div class="container">
+
+    <div class="breadcrumb">
+      <!-- path nav -->
+      <li><a href="#">Main</a></li>
+      <li><a href="#">Article List</a></li>
+      <li class="active">article <span class="badge">Krd</span></li>
+    </div>
+    <h1>Hello,Jerry!</h1>
+    <p>
+      <span class="label label-success">Keyword</span>
+      <span class="label label-danger">Keyword2</span>
+      <span class="label label-info">Keyword3</span>
+    </p>
+    <div>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae recusandae, nobis voluptate eligendi doloribus corporis dolorum, autem animi nisi! Autem ipsam repellat minima soluta excepturi a minus, doloremque, ut nesciunt!</div>
+      <div>Libero aperiam ab unde aliquid, eligendi itaque delectus magni voluptas mollitia. Debitis deleniti, explicabo ad, rem in voluptatem obcaecati magnam iure nostrum quod praesentium molestias voluptas dicta rerum sequi, facilis.</div>
+      <div>Deserunt mollitia doloremque vel, enim ratione ipsum, cupiditate nihil quia, animi magnam itaque reiciendis. Error molestiae, veniam officiis at sapiente assumenda neque natus maiores sunt, dolorum est cumque culpa maxime!</div>
+      <div>Quam mollitia eius quis dolorem corrupti a illo ipsam totam. Temporibus, porro, officia. Odit harum rerum voluptatem ratione, quo, ipsa laboriosam eius dicta aspernatur accusantium possimus, eos eum earum modi.</div>
+    </div>
+    <ul class="pagination">
+      <!-- Page nav -->
+      <li><a href="">1</a></li>
+      <li class="active"><a href="">2</a></li>
+      <li><a href="">3</a></li>
+    </ul>
+    <ul class="pager">
+      <!-- Page nav -->
+      <li class="active"><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+    </ul>
+    <p>
+      <button class="btn btn-primary">
+      点赞
+       <span class="badge">1220</span>
+      </button>
+    </p>
+
+<div class="list-group"><!--  做投票，做侧栏 -->
+  <a href="" class="list-group-item">AAAA</a>
+  <a href="" class="list-group-item">BBBB</a>
+  <a href="" class="list-group-item">CCCC</a>
+  <a href="" class="list-group-item">DDDD</a>
+  <a href="" class="list-group-item">EEEE</a>
+</div>
+
+
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>用户名</th>
+          <th>邮箱</th>
+          <th>注册于</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Jerry
+          </td>
+          <td>
+            122321@34.com
+          </td>
+          <td>
+            01/12/2018
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lucy
+          </td>
+          <td>
+            12d2321@34.com
+          </td>
+          <td>
+            22/12/2018
+          </td>
+        </tr>
+        <tr class="danger">
+          <td>
+            Lucy
+          </td>
+          <td>
+            12d2321@34.com
+          </td>
+          <td>
+            22/12/2018
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Jerry
+          </td>
+          <td>
+            122321@34.com
+          </td>
+          <td>
+            01/12/2018
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lucy
+          </td>
+          <td>
+            12d2321@34.com
+          </td>
+          <td>
+            22/12/2018
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Lucy
+          </td>
+          <td>
+            12d2321@34.com
+          </td>
+          <td>
+            22/12/2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <!-- 面板外层   -->
+          <div class="panel-heading">
+            <!-- 面板头部   -->
+            <div class="panel-title">统计</div> <!-- 面板标题 字体强化   -->
+            <div class="small text-muted">每日用户统计</div><!-- 缩小字体,淡化字体 -->
+          </div>
+          <div class="panel-body">
+            <!-- 面板躯干   -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quod facilis, maiores. Praesentium, tempora, in! Tempora omnis eius nobis dolo
+            rum qui beatae quo earum, rerum, nesciunt culpa illum ipsam incidunt dignissimos.
+          </div>
+          <div class="panel-footer">
+            <!-- 面板尾部   -->
+            <div class="small text-muted">更新与2小时前</div> <!-- 缩小字体,淡化字体 -->
+          </div>
+        </div><!-- 面板外层   -->
+      </div>
+      <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">统计</div>
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quod facilis, maiores. Praesentium, tempora, in! Tempora omnis eius nobis dolo
+            rum qui beatae quo earum, rerum, nesciunt culpa illum ipsam incidunt dignissimos.
+          </div>
+          <div class="panel-footer">更新与2小时前</div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="panel panel-success">
+          <div class="panel-heading">统计</div>
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quod facilis, maiores. Praesentium, tempora, in! Tempora omnis eius nobis dolo
+            rum qui beatae quo earum, rerum, nesciunt culpa illum ipsam incidunt dignissimos.
+          </div>
+          <div class="panel-footer">更新与2小时前</div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="panel panel-info">
+          <div class="panel-heading">统计</div>
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quod facilis, maiores. Praesentium, tempora, in! Tempora omnis eius nobis dolo
+            rum qui beatae quo earum, rerum, nesciunt culpa illum ipsam incidunt dignissimos.
+          </div>
+          <div class="panel-footer">更新与2小时前</div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="panel panel-danger">
+          <div class="panel-heading">统计</div>
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quod facilis, maiores. Praesentium, tempora, in! Tempora omnis eius nobis dolo
+            rum qui beatae quo earum, rerum, nesciunt culpa illum ipsam incidunt dignissimos.
+          </div>
+          <div class="panel-footer">更新与2小时前</div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <h1>登陆</h1>
+    <form action="#" class="container  container-small">
+
+      <div class="alert alert-success">登陆成功，正在跳转。。。</div>
+
+
+      <div class="form-inline form-group">
+        <div class="form-group has-error">
+          <label class="control-label">姓</label>
+          <input type="text" class="form-control input-lg ">
+        </div>
+        <div class="form-group">
+          <label>名</label>
+          <input type="text" class="form-control input-sm">
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary gap">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-sm-4"><input type="text" class="form-control"></div>
+        <div class="col-sm-4"><input type="text" class="form-control"></div>
+        <div class="col-sm-4"><input type="text" class="form-control"></div>
+      </div>
+
     </form>
+
+
+    <hr>
+
+
+    <div class="container">
+      <h2>水平表单：控件状态</h2>
+      <form action="#" class="form-horizontal">
+        <div class="form-group">
+          <label for="focusedInput" class="col-sm-2 control-label">Focused</label>
+          <div class="col-sm-9">
+            <input type="text" id="focusedInput" class="form-control " value="Click to focus...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="" class="col-sm-2 control-label">disible</label>
+          <div class="col-sm-9">
+            <input type="text" id="focusedInput" class="form-control " disabled>
+          </div>
+        </div>
+
+        <hr>
+        <fieldset disabled>
+          <div class="form-group">
+            <label for="disabledTextInput" class="col-sm-2 control-label">Disabled input and select list (Fieldset disabled)</label>
+            <div class="col-sm-10">
+              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="disabledSelect" class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+              <select id="disabledSelect" class="form-control">
+                <option>Disabled select</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group has-success has-feedback">
+          <label class="col-sm-2 control-label" for="inputSuccess">Input with success and glyphicon</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputSuccess">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+          </div>
+        </div>
+        <hr>
+        <div class="well">
+          <button class="btn btn-success">哈哈</button>
+          <button class="btn btn-primary">哈哈</button>
+          <a href="https://www.baidu.com/" class="btn btn-warning">百度一下</a>
+          <button class="btn btn-success">哈哈</button>
+          <button class="btn btn-success">哈哈</button>
+
+          <p>
+            <button class="btn btn-success">哈哈</button>
+            <button class="btn btn-success btn-lg">哈哈</button>
+            <button class="btn btn-success btn-sm">哈哈</button>
+            <button class="btn btn-success btn-xs">哈哈</button>
+          </p>
+
+          <p>
+            <button class="btn btn-success btn-block">哈哈</button>
+          </p>
+
+          <hr>
+
+          <div class="btn-toolbar">
+            <span class="btn-group btn-group-lg">
+              <button disabled class="btn btn-default">Page 1</button>
+              <button class="btn btn-default active">Page 2</button>
+              <button class="btn btn-default">Page 3</button>
+            </span>
+            <button disabled class="btn btn-default">Page 1</button>
+            <button class="btn btn-default active">Page 2</button>
+            <button class="btn btn-default">Page 3</button>
+
+
+            <span class="btn-group-vertical">
+              <button disabled class="btn btn-default">Page 1</button>
+              <button class="btn btn-default active">Page 2</button>
+              <button class="btn btn-default">Page 3</button>
+            </span>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+
+
+
+
+
+    <ul class="nav nav-tabs nav-justified">
+      <li class="active"><a href="">登陆</a></li>
+      <li><a href="">注册</a></li>
+      <li><a href="">忘记密码</a></li>
+    </ul>
+    <h2>title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique debitis vitae quisquam saepe consequatur dignissimos provident incidunt, eligendi. Unde perspiciatis facilis vel dicta itaque consequuntur quae expedita earum saepe culpa!</p>
+    <hr>
+
+
+    <div class="row">
+      <div class="col-xs-2">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="">登陆</a></li>
+          <li><a href="">注册</a></li>
+          <li><a href="">忘记密码</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6">
+        <h2>title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique debitis vitae quisquam saepe consequatur dignissimos provident incidunt, eligendi. Unde perspiciatis facilis vel dicta itaque consequuntur quae expedita earum saepe
+          culpa!</p>
+      </div>
+
+    </div>
+    <br>
+    <div class="row">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="">登陆</a></li>
+        <li><a href="">注册</a></li>
+        <li><a href="">忘记密码</a></li>
+      </ul>
+      <h2>title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique debitis vitae quisquam saepe consequatur dignissimos provident incidunt, eligendi. Unde perspiciatis facilis vel dicta itaque consequuntur quae expedita earum saepe culpa!</p>
+
+
+    </div>
+
+    <hr>
+  </div>
 </body>
 
 </html>
